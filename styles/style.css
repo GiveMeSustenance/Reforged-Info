@@ -1,0 +1,76 @@
+@font-face { font-family: belisa_plumilla; src: url("../fonts/belisa_plumilla.ttf"); } 
+html {
+  font-size: 24px; /* px means "pixels": the base font size is now 10 pixels high */
+  font-family: belisa_plumilla; /* this should be the rest of the output you got from Google Fonts */
+  background-color: gray;
+  color: black;
+}
+
+.intro {
+  width: 600px;
+  margin: 8% auto;
+  background-color: white;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+  text-align: center;
+}
+
+.info {
+  width: 1500px;
+  margin: 2% auto;
+  background-color: white;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+
+.img {
+  background-image: url("../images/pigmancolor.jpg");
+}
+
+.background {
+  background-image: url("../images/forge-background-1.png");
+}
+
+h1 {
+  font-size: 100px;
+  text-align: center;
+  padding: 0px 0px 0px 0px;
+  margin: 5% auto;
+}
+
+p {
+  text-align: center;
+}
+
+p,
+li {
+  font-size: 32px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+nav {
+  font-size: 32px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+td,
+th {
+  border: 1px solid black;
+  padding: 5px 5px 5px 5px;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+table {
+  font-size: 40px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
