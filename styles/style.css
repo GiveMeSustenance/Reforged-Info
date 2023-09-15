@@ -31,11 +31,22 @@ html {
   background-image: url("../images/forge-background-1.png");
 }
 
+.title {
+  background-image: url("../images/ds-pause.png");
+  background-repeat: no-repeat;
+  background-size: 450px auto;
+  background-position: center 50%;
+}
+
 h1 {
+  display: block;
+  margin: 0 auto;
   font-size: 100px;
+  height: 7rem;
   text-align: center;
-  padding: 0px 0px 0px 0px;
-  margin: 5% auto;
+  padding-top: 4%;
+  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
 
 p {
