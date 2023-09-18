@@ -113,3 +113,20 @@ img {
   display: block;
   margin: 0 auto;
 }
+
+.flex {
+  display: flex;
+  margin-right: 10px;
+}
+
+.checkbox-row {
+  display: flex; /* Use flexbox to create a horizontal layout */
+  flex-direction: row;
+  justify-content: space-evenly; /* Add spacing between checkboxes */
+}
+
+legend {
+  font-size: 50px;
+  margin: 0 auto;
+  margin-top: 30px;
+}

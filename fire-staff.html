@@ -93,7 +93,149 @@
         </tr>
     </table>
 
-    <h2>Damage Calculator</h2>
+    <form>
+        <fieldset class="checkbox-row"> <!-- class="check-horizontal" -->
+            <legend>Damage Calculator</legend>
+
+            <div>
+                <h3>Characters</h3>
+                <div>
+                    <input 
+                        type="checkbox"
+                        id="willow"
+                        name="willow"
+                        value="1.1"
+                    >
+                    <label for="willow">Willow</label>
+                </div>
+                <div>
+                    <input 
+                        type="checkbox"
+                        id="wandaOld"
+                        name="wandaOld"
+                        value="1.2475"
+                    >
+                    <label for="wandaOld">Wanda (Old)</label>
+                </div>
+                <div>
+                    <input 
+                        type="checkbox"
+                        id="wickerBoost"
+                        name="wickerBoost"
+                        value="1.5"
+                    >
+                    <label for="wickerBoost">Wicker Amplify</label>
+                </div>
+
+                <h3>Armor and Hats</h3>
+                <div>
+                    <input 
+                        type="checkbox"
+                        id="cultistCloak"
+                        name="cultistCloak"
+                        value="1.2"
+                    >
+                    <label for="cultistCloak">Cultist Cloak</label>
+                </div>
+                <div>
+                    <input 
+                        type="checkbox"
+                        id="crown"
+                        name="crown"
+                        value="1.25"
+                    >
+                    <label for="crown">Crown</label>
+                </div>
+    
+                <h3>Buffs</h3>
+                <div>
+                    <input 
+                        type="checkbox"
+                        id="battleCry"
+                        name="battleCry"
+                        value="1.3"
+                    >
+                    <label for="battleCry">Battle Cry</label>
+                </div>
+                <div>
+                    <input 
+                        type="checkbox"
+                        id="wellFed"
+                        name="wellFed"
+                        value="1.1"
+                    >
+                    <label for="wellFed">Well Fed</label>
+                </div>
+                <div>
+                    <input 
+                        type="checkbox"
+                        id="cultistGrow"
+                        name="cultistGrow"
+                        value="1.5"
+                    >
+                    <label for="cultistGrow">Cultist - Grow</label>
+                </div>
+                <div>
+                    <input 
+                        type="checkbox"
+                        id="damageSpice"
+                        name="damageSpice"
+                        value="1.25"
+                    >
+                    <label for="damageSpice">Damage Spice</label>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <h3>Total Damage </h3>
+                    <p id="totalMult">0</p>
+                </div>
+                <div>
+                    <h3>Pit Pig HP</h3>
+                    <p>340</p>
+                </div>
+                <div>
+                    <h3>Kills Pit Pig? </h3>
+                    <p id="killsPig">0</p>
+                </div>
+                <div>
+                    <button type="submit">Calculate</button>
+                </div>
+            </div>
+            
+        </fieldset>
+    </form>
+
+    <script id="fireStaffDamage">
+        const form = document.querySelector("form");
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            let damageMult = [];
+            var totalMult = 1;
+            document.querySelectorAll('[type="checkbox"]').forEach(item => { //get total mult for meteor
+                if(item.checked == true) {
+                    let newFloat = parseFloat(item.value)
+                    damageMult.push(newFloat);
+                    totalMult = totalMult * newFloat
+                }
+            })
+
+            var metDmg = Math.round(200*totalMult)
+
+            document.getElementById("totalMult").textContent = metDmg;
+
+            var pitPigHP = 340;
+            var killsPig = false
+            if(metDmg >= pitPigHP) {
+                killsPig = true
+            }
+
+            document.getElementById("killsPig").textContent = killsPig;
+        })
+    </script>
 
     <nav>
         <a href="index.html">Index</a>
