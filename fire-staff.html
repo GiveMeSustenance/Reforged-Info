@@ -199,19 +199,19 @@
                     <h3>Kills Pit Pig? </h3>
                     <p id="killsPig">0</p>
                 </div>
-                <div>
+                <!-- <div>
                     <button type="submit">Calculate</button>
-                </div>
+                </div> -->
             </div>
             
         </fieldset>
     </form>
 
-    <script id="fireStaffDamage">
+    <script>
         const form = document.querySelector("form");
 
-        form.addEventListener("submit", (e) => {
-            e.preventDefault();
+        form.addEventListener("click", (e) => {
+            //e.preventDefault(); //for submit button
 
             let damageMult = [];
             var totalMult = 1;
