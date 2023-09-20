@@ -23,6 +23,14 @@ html {
   border: 5px solid black;
 }
 
+.boxed {
+  margin: 5% auto;
+  background-color: rgb(196, 196, 196);
+  padding: 5px;
+  border: 2px solid black;
+  text-align: center;
+}
+
 .img {
   background-image: url("../images/pigmancolor.jpg");
 }
@@ -36,6 +44,10 @@ html {
   background-repeat: no-repeat;
   background-size: 450px auto;
   background-position: center 50%;
+}
+
+.fit-title {
+  width: 450px;
 }
 
 h1 {
@@ -116,7 +128,7 @@ img {
 
 .flex {
   display: flex;
-  margin-right: 10px;
+  justify-content: space-evenly;
 }
 
 .checkbox-row {
