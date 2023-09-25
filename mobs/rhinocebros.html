@@ -6,10 +6,78 @@
 
     <link href="../styles/style.css" rel="stylesheet" />
 
-    <title>Index - Reforged Info</title>
+    <title>Rhinocebros - Reforged Info</title>
     <link rel="shortcut icon" type="image/jpg" href="images/book.png"/>
 </head>
 <body class="info">
+    <div>
+        <h1 class="title">General Info</h1>
+        <div class="flex">
+            <div class="boxed-flex">
+                <h2>Mob Name</h2>
+                <p class="mob-info">Rhinocebros</p>
+            </div>
+            <div class="boxed-flex">
+                <h2>Hit Points</h2>
+                <p class="mob-info">12750</p>
+            </div>
+            <div class="boxed-flex">
+                <h2>Walk Speed</h2>
+                <p class="mob-info">7</p>
+            </div>
+            <div class="boxed-flex">
+                <h2>Run Speed</h2>
+                <p class="mob-info">7</p>
+            </div>
+        </div>
+
+        <div class="flex">
+            <div class="boxed-flex">
+                <h2>Weight</h2>
+                <p class="mob-info">10</p>
+            </div>
+            <div class="boxed-flex">
+                <h2>Petrify Duration (s)</h2>
+                <p class="mob-info">6</p>
+            </div>
+            <div class="boxed-flex">
+                <h2>Other Actions</h2>
+                <p class="mob-info">Cheer, Revive</p>
+            </div>
+            <div class="boxed-flex">
+                <h2>Action CD (s)</h2>
+                <p class="mob-info">15, -</p>
+            </div>
+        </div>
+
+        <h1 class="title">Attacks</h1>
+        <table>
+            <tr>
+                <th>Attack</th>
+                <th>Damage</th>
+                <th>Attack Period (s)</th>
+                <th>Range</th>
+                <th>Condition</th>
+                <th>Other Effects</th>
+            </tr>
+            <tr>
+                <td>Headbutt</td>
+                <td>150</td>
+                <td>3</td>
+                <td>3</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Charge</td>
+                <td>150?</td>
+                <td>1.5</td>
+                <td>3</td>
+                <td>Walking for ? sec.</td>
+                <td>Knocks back players without knockback resistant armor (KB is ?)</td>
+            </tr>
+        </table>
+    </div>
     <div class="flex">
         <div>
             <h1 class="title-2">Buffing</h1>
@@ -66,13 +134,19 @@
             <h1 class="title-2">Info</h1>
             <ul>
                 <li>
+                    <p class="boxed">Rhinos revive each other at 20% HP</p>
+                </li>
+                <li>
                     <p class="boxed">Buffs stack to a max of 7</p>
                 </li>
                 <li>
-                    <p class="boxed">Buffs don't dispear when rhino is killed and revived</p>
+                    <p class="boxed">Buffs don't disapear when rhino is killed and revived</p>
                 </li>
                 <li>
                     <p class="boxed">Rhinos only gain buff if the rhino symbol shows up above their head</p>
+                </li>
+                <li>
+                    <p class="boxed">Rhinos attack period counts down even in charge so they will attack right after charge if they are able</p>
                 </li>
             </ul>
         </div>

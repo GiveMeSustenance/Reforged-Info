@@ -159,7 +159,8 @@ img {
 
 .flex {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  /* flex-wrap: wrap; */
 }
 
 .checkbox-row {
